@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import config from "../../site.config.js";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
