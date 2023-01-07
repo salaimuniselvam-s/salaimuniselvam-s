@@ -18,7 +18,7 @@ export default function Home() {
 
   const router = useRouter();
 
-  const projects = projectsData ? projectsData.slice(0, 3) : null;
+  const projects = projectsData ? projectsData?.slice(0, 3) : null;
 
   return (
     <>
@@ -308,7 +308,7 @@ export default function Home() {
               </p>
               <div className=" flex-row flex-wrap flex-1 justify-center  gap-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch">
                 {_reposData ? (
-                  reposData && (
+                  reposData.length > 0 && (
                     <>
                       {reposData
                         ?.slice(0, 8)
