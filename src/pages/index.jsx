@@ -14,7 +14,11 @@ export default function Home() {
   const projectsData = _projectsData ? _projectsData : null;
 
   const { data: _reposData } = swr("/api/repos");
-  const reposData = _reposData ? _reposData : null;
+  const reposData = _reposData
+    ? _reposData?.message != "Bad credentials"
+      ? _reposData
+      : null
+    : null;
 
   const router = useRouter();
 
@@ -308,7 +312,7 @@ export default function Home() {
               </p>
               <div className=" flex-row flex-wrap flex-1 justify-center  gap-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch">
                 {_reposData ? (
-                  reposData.length > 0 && (
+                  reposData && (
                     <>
                       {reposData
                         ?.slice(0, 8)
