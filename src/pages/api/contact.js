@@ -1,52 +1,39 @@
-import config from '../../../site.config';
+import clientPromise from "../../lib/mongodb";
 
 export default async (req, res) => {
-    let { name, email, message } = req.body;
-    if (!name || !email || !message) {
-        res.status(400).json({
-            success: true,
-            message: "All fields are required",
-            data: null
+  let { name, email, message } = req.body;
+  if (!name || !email || !message) {
+    res.status(400).json({
+      success: true,
+      message: "All fields are required",
+      data: null,
+    });
+  }
+
+  try {
+    const client = await clientPromise;
+    const db = client.db("portfolio");
+    switch (req.method) {
+      case "POST":
+        let bodyObject = req.body;
+        await db.collection("posts").insertOne(bodyObject);
+        res.status(200).json({
+          success: true,
+          message: "Message sent successfully",
+          data: "",
         });
+        break;
+      case "GET":
+        const allPosts = await db.collection("allPosts").find({}).toArray();
+        res.json({ status: 200, data: allPosts });
+        break;
     }
-
-    let _ =  await fetch(process.env.webhook, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          username: 'JanjyTapYT.me | Contact Form',
-          attachments: [],
-          embeds: [
-            {
-              title: 'Contact - '+ name,
-              type: "rich",
-              color: 5193214,
-              fields: [
-                {
-                  name: 'Email',
-                  value: email || 'N/A'
-                },
-                {
-                  name: 'Username',
-                  value: name || 'N/A'
-                },
-                {
-                  name: 'Content',
-                  value: message || 'N/A'
-                }
-              ]
-            }
-          ]
-        })
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({
+      success: false,
+      message: "Failed To Submit",
+      data: null,
     });
-
-    res.status(200).json({
-        success: true,
-        message: "Message sent successfully",
-        data: {
-            _
-        }
-    });
+  }
 };
