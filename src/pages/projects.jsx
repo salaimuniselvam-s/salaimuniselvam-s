@@ -97,14 +97,13 @@ export default function Projects() {
                           whileTap={{ scale: 0.95 }}
                         >
                           {p.invite === true ? (
-                            <button
-                              onClick={() => router.push(p.inviteLink)}
+                            <a
                               target="_blank"
                               className="bg-primary shadow-2xl shadow-primary text-white font-display font-semibold text-lg px-5 py-2 rounded-md button button-text"
                               href={p.inviteLink}
                             >
                               <i className="fa-brands fa-discord" /> Invite
-                            </button>
+                            </a>
                           ) : null}
                         </motion.div>
                       </div>

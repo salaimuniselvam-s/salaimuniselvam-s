@@ -222,7 +222,8 @@ export default function Header() {
             <div className="py-6 px-5 space-y-6">
               <motion.div whileHover={{ scale: 1.05 }}>
                 <a
-                  onClick={() => router.push(config.social.discord)}
+                  target="_blank"
+                  href={config.social.discord}
                   className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
                 >
                   <h1 className="text-white dark:text-white button-text">
@@ -232,7 +233,8 @@ export default function Header() {
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }}>
                 <a
-                  onClick={() => router.push(config.social.twitter)}
+                  target="_blank"
+                  href={config.social.twitter}
                   className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
                 >
                   <h1 className="text-white dark:text-white button-text">
