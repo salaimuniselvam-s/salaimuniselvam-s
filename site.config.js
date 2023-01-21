@@ -47,6 +47,19 @@ module.exports = {
     data: [
       {
         id: 1,
+        image: "/StakingApp.png",
+        slug: "Staking Dapp",
+        name: "Staking Dapp",
+        github: true,
+        githubLink: "https://github.com/salaimuniselvam-s/Staking-Dapp",
+        website: true,
+        websiteLink: "https://staking-dapp-delta.vercel.app/",
+        invite: false,
+        inviteLink: "",
+        description: "Decentralised Staking Application on Polygon",
+      },
+      {
+        id: 2,
         image: "/Patient.png",
         slug: "Patient Record Management",
         name: "Patient Record Management",
