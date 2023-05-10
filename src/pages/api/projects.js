@@ -1,7 +1,7 @@
 const config = require("../../../site.config.js");
 
 export default async (req, res) => {
-  const data = config.projects.data.map((project) => {
+  const data = config.projects.data.reverse().map((project) => {
     return {
       id: project.id,
       image: project.image,

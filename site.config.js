@@ -47,6 +47,20 @@ module.exports = {
     data: [
       {
         id: 1,
+        image: "/Patient.png",
+        slug: "Patient Record Management",
+        name: "Patient Record Management",
+        github: true,
+        githubLink:
+          "https://github.com/salaimuniselvam-s/patient_public_blockchain",
+        website: true,
+        websiteLink: "https://patient-public-blockchain.vercel.app/",
+        invite: false,
+        inviteLink: "",
+        description: "Record Management System for Patients on Ethereum",
+      },
+      {
+        id: 2,
         image: "/StakingApp.png",
         slug: "Staking Dapp",
         name: "Staking Dapp",
@@ -59,18 +73,19 @@ module.exports = {
         description: "Decentralised Staking Application on Polygon",
       },
       {
-        id: 2,
-        image: "/Patient.png",
-        slug: "Patient Record Management",
-        name: "Patient Record Management",
+        id: 3,
+        image: "/Fabric.png",
+        slug: "Patient Data Management",
+        name: "Patient Data Management",
         github: true,
         githubLink:
-          "https://github.com/salaimuniselvam-s/patient_public_blockchain",
-        website: true,
-        websiteLink: "https://patient-public-blockchain.vercel.app/",
+          "https://github.com/salaimuniselvam-s/patient-data-management-using-hyperledger-fabric",
+        website: false,
+        websiteLink: "",
         invite: false,
         inviteLink: "",
-        description: "Record Management System for Patients on Ethereum",
+        description:
+          "Patient data management solution built on Hyperledger Fabric.",
       },
     ],
   },
