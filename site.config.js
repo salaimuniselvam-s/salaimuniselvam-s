@@ -87,6 +87,20 @@ module.exports = {
         description:
           "Patient data management solution built on Hyperledger Fabric.",
       },
+      {
+        id: 4,
+        image: "/Booklandia.png",
+        slug: "Booklandia",
+        name: "Booklandia",
+        github: true,
+        githubLink: "https://github.com/salaimuniselvam-s/Booklandia",
+        website: true,
+        websiteLink: "https://salaimuniselvam-s.github.io/Booklandia/",
+        invite: false,
+        inviteLink: "",
+        description:
+          "Booklandia is a personal website where I share my favorite books and provide detailed descriptions and recommendations for each genre.",
+      },
     ],
   },
 
