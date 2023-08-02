@@ -84,10 +84,39 @@ export default function About() {
                   </p>
                 </div>
                 <br />
-                <div className="pb-4 py-4">
-                  <h1 className="text-1xl font-bold button-text">
-                    I Love To Learn New Things and I'm Currently Learning
-                    Solidity &nbsp; <br /> Thanks for reading{" "}
+                <div className="pb-4 py-4 gap-3  flex flex-col justify-center items-center text-lg max-w-5xl">
+                  <h1>
+                    With a solid foundation in HTML, CSS, and JavaScript, I
+                    bring expertise in modern frameworks such as React.js and
+                    Next.js. I also possess a strong understanding of back-end
+                    technologies including Node.js, Mongodb and SQL, enabling me
+                    to develop full-stack applications seamlessly.
+                  </h1>
+                  <h1>
+                    Over the past two years, I have honed my skills and
+                    delivered impactful solutions as an Software Engineer. My
+                    proficiency extends beyond traditional web development,
+                    encompassing the realm of blockchain technology with
+                    experience in Solidity and Hyperledger Fabric.{" "}
+                  </h1>
+                  <h1>
+                    I possess expertise in leveraging Docker and GitHub Actions
+                    to automate processes and optimize workflows, enabling
+                    seamless development and deployment experiences.
+                  </h1>{" "}
+                  <h1>
+                    With a keen eye for detail, I consistently strive to deliver
+                    high-quality code and an intuitive user interface. As a
+                    software developer, I am dedicated to pushing boundaries and
+                    continuously improving my skills. I thrive in collaborative
+                    environments, where I can contribute my expertise and work
+                    alongside talented teams to deliver innovative solutions
+                    that exceed expectations.
+                  </h1>
+                  <h1>
+                    {" "}
+                    Let's connect and discuss how we can leverage my skills to
+                    create impactful and user-centric software solutions.
                     <i
                       className="fas fa-heart"
                       style={{ color: heartColor, cursor: "pointer" }}

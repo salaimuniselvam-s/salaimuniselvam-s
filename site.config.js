@@ -57,7 +57,8 @@ module.exports = {
         websiteLink: "https://patient-public-blockchain.vercel.app/",
         invite: false,
         inviteLink: "",
-        description: "Record Management System for Patients on Ethereum",
+        description:
+          "An Ethereum-based Patient Record Management System. Efficiently stores and manages patient records on the blockchain.",
       },
       {
         id: 2,
@@ -70,7 +71,8 @@ module.exports = {
         websiteLink: "https://staking-dapp-delta.vercel.app/",
         invite: false,
         inviteLink: "",
-        description: "Decentralised Staking Application on Polygon",
+        description:
+          "Decentralised Staking Application Where Users can Stake their token for rewards. Application was Deployed on Polygon Mumbai Test Network.",
       },
       {
         id: 3,
@@ -85,7 +87,7 @@ module.exports = {
         invite: false,
         inviteLink: "",
         description:
-          "Patient data management solution built on Hyperledger Fabric.",
+          "Patient data management solution built on Hyperledger Fabric provides a highly secure and scalable platform for sharing patient data across healthcare providers.",
       },
       {
         id: 4,
@@ -100,6 +102,34 @@ module.exports = {
         inviteLink: "",
         description:
           "Booklandia is a personal website where I share my favorite books and provide detailed descriptions and recommendations for each genre.",
+      },
+      {
+        id: 5,
+        image: "/foodDelight.jpg",
+        slug: "Food Delight",
+        name: "Food Delight",
+        github: true,
+        githubLink: "https://github.com/salaimuniselvam-s/food-app",
+        website: true,
+        websiteLink: "https://food-delight.vercel.app/",
+        invite: false,
+        inviteLink: "",
+        description:
+          "Food Delight is a user-friendly web application focused on providing a delightful interface for exploring and ordering delicious meals.",
+      },
+      {
+        id: 6,
+        image: "/streamingApp.jpg",
+        slug: "CODIIS Stream",
+        name: "CODIIS Stream",
+        github: true,
+        githubLink: "https://github.com/salaimuniselvam-s/streaming-app",
+        website: true,
+        websiteLink: "https://streaming-app-swart-one.vercel.app/",
+        invite: false,
+        inviteLink: "",
+        description:
+          "C Stream (CODIIS Stream) is a streaming application Which allows users to enjoy their screen time by providing a platform to watch and purchase videos based on different plans.",
       },
     ],
   },

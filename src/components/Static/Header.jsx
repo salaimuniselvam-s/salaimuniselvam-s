@@ -17,13 +17,13 @@ export default function Header() {
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link href="/">
               <a className="text-2xl hover:cursor-pointer font-bold transition-all duration-200 button-text  text-black/90 dark:text-white/90">
                 <i className="cursor-pointer signature">Salaimuniselvam</i>
               </a>
             </Link>
-          </div>
+          </div> */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -224,7 +224,7 @@ export default function Header() {
                 <a
                   target="_blank"
                   href={config.social.discord}
-                  className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
+                  className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md  font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
                 >
                   <h1 className="text-white dark:text-white button-text">
                     <i className="fab fa-discord" /> Discord Server
@@ -235,7 +235,7 @@ export default function Header() {
                 <a
                   target="_blank"
                   href={config.social.twitter}
-                  className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
+                  className="bg-primary shadow-2xl shadow-primary text-2xl w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md  font-medium text-white hover:bg-primary dark:bg-primary dark:hover:bg-primary"
                 >
                   <h1 className="text-white dark:text-white button-text">
                     <i className="fab fa-twitter" /> Twitter
