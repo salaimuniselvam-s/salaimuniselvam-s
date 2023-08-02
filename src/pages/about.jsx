@@ -1,15 +1,11 @@
-import swr from "hooks/swr";
 import Head from "next/head";
 import Image from "next/image";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import config from "../../site.config";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 export default function About() {
   let [heartColor] = useState("#ff0000");
-
-  const router = useRouter();
 
   return (
     <>
@@ -130,7 +126,7 @@ export default function About() {
                       <a
                         href={config.social.github}
                         target="_blank"
-                        className="bg-primary text-black dark:text-white font-display font-semibold text-lg px-5 py-2 rounded-md mr-5 button text-white shadow-2xl shadow-primary transition-all duration-200 button button-text"
+                        className="bg-primary font-display font-semibold text-lg px-5 py-2 rounded-md mr-5 button text-white shadow-2xl shadow-primary transition-all duration-200 button button-text"
                       >
                         <i className="fa-brands fa-github" /> Github
                       </a>
@@ -142,7 +138,7 @@ export default function About() {
                       <a
                         href={config.social.twitter}
                         target="_blank"
-                        className="bg-primary text-black dark:text-white font-display font-semibold text-lg px-5 py-2 rounded-md button text-white shadow-2xl shadow-primary transition-all duration-200 button button-text"
+                        className="bg-primary  font-display font-semibold text-lg px-5 py-2 rounded-md button text-white shadow-2xl shadow-primary transition-all duration-200 button button-text"
                       >
                         <i className="fa-brands fa-twitter" /> Twitter
                       </a>

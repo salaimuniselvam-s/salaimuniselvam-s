@@ -55,9 +55,9 @@ export default function Header() {
             </a>
           </motion.div>
           <nav className="hidden md:flex space-x-10 items-center justify-center">
-            {pages.map((page, index) => (
+            {pages.map((page) => (
               <motion.div
-                key={index}
+                key={page.name}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

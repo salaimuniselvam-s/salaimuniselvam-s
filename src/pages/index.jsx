@@ -155,7 +155,7 @@ export default function Home() {
                                   className="rounded-md mt-2"
                                   width="24"
                                   height="24"
-                                  style={{ fill: "#fff!important;" }}
+                                  style={{ fill: "#fff!important" }}
                                 />
                               </div>
                             </div>
@@ -208,7 +208,10 @@ export default function Home() {
                 {_projectsData ? (
                   projects ? (
                     projects?.map((p, i) => (
-                      <div className="cursor-pointer transition-all w-full flex flex-col bg-gray-300/50 dark:bg-zinc-900/50 p-4 rounded-lg justify-center items-center hover:-translate-y-1 hover:scale-[1.02]">
+                      <div
+                        className="cursor-pointer transition-all w-full flex flex-col bg-gray-300/50 dark:bg-zinc-900/50 p-4 rounded-lg justify-center items-center hover:-translate-y-1 hover:scale-[1.02]"
+                        key={i}
+                      >
                         <div className="w-full relative md:mt-2">
                           <Image
                             src={p.image}
