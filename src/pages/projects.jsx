@@ -63,7 +63,7 @@ export default function Projects() {
                       <p className="text-black dark:text-white text-sm button-text">
                         {p.description}
                       </p>
-                      <div className="flex flex-row justify-center items-center mt-3">
+                      <div className="flex xsm:flex-row flex-col justify-center gap-6 items-center mt-3">
                         <motion.div
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
@@ -71,7 +71,7 @@ export default function Projects() {
                           {p.github === true ? (
                             <a
                               target="_blank"
-                              className="bg-primary shadow-2xl shadow-primary text-white font-display font-semibold text-lg px-5 py-2 rounded-md mr-5 button button-text"
+                              className="bg-primary shadow-2xl shadow-primary text-white font-display font-semibold text-lg px-5 py-2 rounded-md button button-text"
                               href={p.githubLink}
                             >
                               <i className="fa-brands fa-github" /> Github
