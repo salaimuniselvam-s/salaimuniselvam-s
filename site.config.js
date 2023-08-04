@@ -105,6 +105,20 @@ module.exports = {
       },
       {
         id: 5,
+        image: "/nftMarketplace.jpg",
+        slug: "NFT Marketplace",
+        name: "NFT Marketplace",
+        github: true,
+        githubLink: "https://github.com/salaimuniselvam-s/nft-marketplace",
+        website: true,
+        websiteLink: "https://nft-marketplace-sms.vercel.app/",
+        invite: false,
+        inviteLink: "",
+        description:
+          "The NFT Marketplace project aims to create an engaging and visually appealing web page that serves as an entry point to a marketplace focused on the trading, buying, and selling of NFTs.",
+      },
+      {
+        id: 6,
         image: "/foodDelight.jpg",
         slug: "Food Delight",
         name: "Food Delight",
@@ -118,7 +132,7 @@ module.exports = {
           "Food Delight is a user-friendly web application focused on providing a delightful interface for exploring and ordering delicious meals.",
       },
       {
-        id: 6,
+        id: 7,
         image: "/streamingApp.jpg",
         slug: "CODIIS Stream",
         name: "CODIIS Stream",

@@ -39,10 +39,11 @@ export default function Projects() {
               Here are some of my projects
             </p>
             <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {_projects ? (
-                projects ? (
-                  projects?.map((p, i) => (
+
+            {_projects ? (
+              projects ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {projects?.map((p, i) => (
                     <div
                       key={i}
                       className="cursor-pointer transition-all w-full flex flex-col bg-gray-300/50 dark:bg-zinc-900/50 p-4 rounded-lg justify-center items-center hover:-translate-y-1 hover:scale-[1.02]"
@@ -108,19 +109,19 @@ export default function Projects() {
                         </motion.div>
                       </div>
                     </div>
-                  ))
-                ) : (
-                  <></>
-                )
-              ) : (
-                <div className="flex flex-col justify-center items-center">
-                  <i className="fal fa-spinner-third fa-spin" />{" "}
-                  <span className="text-xl font-semibold button-text">
-                    Loading Projects...
-                  </span>
+                  ))}
                 </div>
-              )}
-            </div>
+              ) : (
+                <></>
+              )
+            ) : (
+              <div className="flex flex-col w-full my-24 justify-center items-center">
+                <i className="fal fa-spinner-third fa-spin" />{" "}
+                <span className="text-xl my-3 font-semibold button-text">
+                  Loading Projects...
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </motion.div>
