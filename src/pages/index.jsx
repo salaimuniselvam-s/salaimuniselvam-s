@@ -327,7 +327,7 @@ export default function Home() {
                             className="bg-gray-300/50 dark:bg-zinc-900/50 p-4 hover:bg-zinc-700/10 h-auto text-black transition-all duration-200 rounded-lg w-full button button-text hover:scale-[1.03] hover:shadow-2xl"
                           >
                             <div className="w-full relative">
-                              <div className="flex flex-row justify-between items-center justify-center md:justify-start">
+                              <div className="flex flex-row items-center justify-center md:justify-start">
                                 <img
                                   src={`https://opengraph.githubassets.com/15ced7abddd056302fa4e531c75f0c1e3510242eca654c93dd8a8f2b5cc92d44/${_.full_name}`}
                                   alt={_.full_name}
