@@ -167,14 +167,7 @@ export default function Header() {
         >
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-black divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 button-text">
-                    {config.siteMetadata.author}
-                    <span className="text-primary">.</span>
-                    <span className="text-1xl">me</span>
-                  </h1>
-                </div>
+              <div className="flex items-center justify-end">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -193,7 +186,11 @@ export default function Header() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {pages.map((page, index) => (
-                    <motion.div key={index} whileHover={{ scale: 1.05 }}>
+                    <motion.div
+                      key={index}
+                      whileHover={{ scale: 1.05 }}
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
                       <Link href={page.href} key={page.name}>
                         <a
                           className={`-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-900/50 button-text ${

@@ -46,7 +46,7 @@ export default function Projects() {
                   {projects?.map((p, i) => (
                     <div
                       key={i}
-                      className="cursor-pointer transition-all w-full flex flex-col bg-gray-300/50 dark:bg-zinc-900/50 p-4 rounded-lg justify-center items-center hover:-translate-y-1 hover:scale-[1.02]"
+                      className="cursor-pointer transition-all w-full flex flex-col bg-gray-300/50 dark:bg-zinc-900/50 p-4 rounded-lg justify-center items-center hover:-translate-y-1 hover:scale-[1.02] shadow-md"
                     >
                       <div className="w-full relative md:mt-2">
                         <Image
